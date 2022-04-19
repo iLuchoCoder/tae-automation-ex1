@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Facebook Suite Test" verbose="1">
+    <test name="Test Group 2">
+
+        <parameter name="login" value="The user has login succesfully"></parameter>
+        <parameter name="goMyProfile" value="The click onto his profile successfully"></parameter>
+        <parameter name="closeSession" value="The user has closed the session successfully"></parameter>
+
+        <parameter name="editProfile" value="The user click on edit profile link successfully"></parameter>
+        <parameter name="changeProfilePhoto" value="The user change the profile photo successfully"></parameter>
+
+        <groups>
+            <run>
+                <exclude name="group1"></exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="AppTest">
+
+            </class>
+        </classes>
+    </test>
+</suite>
